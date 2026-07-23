@@ -13,6 +13,7 @@ $mirrorBlock = @'
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }
 '@
 $rootGradle = $rootGradle.Replace('        gradlePluginPortal()', $mirrorBlock + "`n        gradlePluginPortal()")
 Set-Content -LiteralPath $rootGradlePath -Value $rootGradle -Encoding UTF8
