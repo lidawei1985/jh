@@ -6588,33 +6588,65 @@ java.lang.NumberFormatException: Not a number: 37.1
 > Task :app:generateDebugBuildConfig
 > Task :app:javaPreCompileDebug
 > Task :player:writeDebugAarMetadata
-> Task :app:checkDebugAarMetadata FAILED
+> Task :app:checkDebugAarMetadata
+WARNING: [Processor] Library '/home/runner/.gradle/caches/modules-2/files-2.1/me.jessyan/autosize/1.2.1/a44df9822e0cb91242358f070ef813714fd81c05/autosize-1.2.1.aar' contains references to both AndroidX and old support library. This seems like the library is partially migrated. Jetifier will try to rewrite the library anyway.
+ Example of androidX reference: 'androidx/fragment/app/FragmentManager$FragmentLifecycleCallbacks'
+ Example of support library reference: 'android/support/v4/app/FragmentManager$FragmentLifecycleCallbacks'
+
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :player:compileDebugRenderscript NO-SOURCE
+> Task :player:generateDebugResValues
+> Task :player:generateDebugResources
+> Task :player:packageDebugResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :player:extractDeepLinksDebug
+> Task :player:processDebugManifest
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :player:compileDebugLibraryResources
+> Task :player:parseDebugLocalResources
+> Task :player:generateDebugRFile
+> Task :app:processDebugResources
+> Task :player:generateDebugBuildConfig
+> Task :player:javaPreCompileDebug
+
+> Task :player:compileDebugJavaWithJavac FAILED
+/home/runner/work/jh/jh/source/player/src/main/java/xyz/doikki/videoplayer/exo/ExoMediaSourceHelper.java:76: error: cannot find symbol
+            return new ProgressiveMediaSource.Factory(new RtmpDataSourceFactory(null))
+                                                          ^
+  symbol:   class RtmpDataSourceFactory
+  location: class ExoMediaSourceHelper
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/jh/jh/source/player/src/main/java/xyz/doikki/videoplayer/player/VideoView.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':app:checkDebugAarMetadata'.
-> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
-   > Could not find org.xwalk:xwalk_shared_library:23.53.589.4.
-     Searched in the following locations:
-       - https://maven.aliyun.com/repository/google/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://maven.aliyun.com/repository/public/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://maven.aliyun.com/repository/gradle-plugin/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://maven.aliyun.com/repository/jcenter/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://plugins.gradle.org/m2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://dl.google.com/dl/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://repo.maven.apache.org/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://jitpack.io/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-       - https://download.01.org/crosswalk/releases/crosswalk/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-     Required by:
-         project :app
+Execution failed for task ':player:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
 
 * Try:
 Run with --info or --debug option to get more log output. Run with --scan to get full insights.
 
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:checkDebugAarMetadata'.
-	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:38)
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':player:compileDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:200)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:263)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:198)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:179)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:109)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:56)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
@@ -6741,31 +6773,22 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:che
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration$ArtifactResolveException: Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.rethrowFailure(DefaultConfiguration.java:1282)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$1700(DefaultConfiguration.java:139)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.visitArtifacts(DefaultConfiguration.java:1259)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.visitContents(DefaultConfiguration.java:1252)
-	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:326)
-	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:119)
-	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:61)
-	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:86)
-	at org.gradle.api.internal.file.DefaultFileCollectionFactory$ResolvingFileCollection.visitChildren(DefaultFileCollectionFactory.java:310)
-	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:119)
-	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:326)
-	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:119)
-	at org.gradle.api.internal.tasks.PropertyFileCollection.visitChildren(PropertyFileCollection.java:48)
-	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:119)
-	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:326)
-	at org.gradle.internal.fingerprint.impl.DefaultFileCollectionSnapshotter.snapshot(DefaultFileCollectionSnapshotter.java:50)
-	at org.gradle.internal.fingerprint.impl.AbstractFileCollectionFingerprinter.fingerprint(AbstractFileCollectionFingerprinter.java:47)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$TaskExecution.lambda$visitInputFileProperties$1(ExecuteActionsTaskExecuter.java:319)
-	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.lambda$fingerprintInputFiles$3(CaptureStateBeforeExecutionStep.java:192)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$TaskExecution.visitInputFileProperties(ExecuteActionsTaskExecuter.java:317)
-	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.fingerprintInputFiles(CaptureStateBeforeExecutionStep.java:188)
-	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.captureExecutionState(CaptureStateBeforeExecutionStep.java:150)
-	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.lambda$captureExecutionStateOp$1(CaptureStateBeforeExecutionStep.java:104)
-	at org.gradle.internal.execution.steps.BuildOperationStep$1.call(BuildOperationStep.java:40)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:57)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:40)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:51)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:37)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:51)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:37)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:98)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:61)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:45)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$2.call(CompileJavaBuildOperationReportingCompiler.java:59)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$2.call(CompileJavaBuildOperationReportingCompiler.java:51)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
@@ -6776,10 +6799,66 @@ Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfigurat
 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
-	at org.gradle.internal.execution.steps.BuildOperationStep.operation(BuildOperationStep.java:37)
-	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.captureExecutionStateOp(CaptureStateBeforeExecutionStep.java:103)
-	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.lambda$execute$0(CaptureStateBeforeExecutionStep.java:78)
-	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:78)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:51)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:343)
+	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:237)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:104)
+	at org.gradle.api.internal.project.taskfactory.IncrementalInputsTaskAction.doExecute(IncrementalInputsTaskAction.java:32)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.AbstractIncrementalTaskAction.execute(AbstractIncrementalTaskAction.java:25)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$3.run(ExecuteActionsTaskExecuter.java:555)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:540)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:523)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.access$300(ExecuteActionsTaskExecuter.java:108)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$TaskExecution.executeWithPreviousOutputFiles(ExecuteActionsTaskExecuter.java:271)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$TaskExecution.execute(ExecuteActionsTaskExecuter.java:260)
+	at org.gradle.internal.execution.steps.ExecuteStep.lambda$execute$0(ExecuteStep.java:33)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:33)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:26)
+	at org.gradle.internal.execution.steps.CleanupOutputsStep.execute(CleanupOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.CleanupOutputsStep.execute(CleanupOutputsStep.java:36)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:34)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:73)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:54)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:44)
+	at org.gradle.internal.execution.steps.SnapshotOutputsStep.execute(SnapshotOutputsStep.java:54)
+	at org.gradle.internal.execution.steps.SnapshotOutputsStep.execute(SnapshotOutputsStep.java:38)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:42)
+	at org.gradle.internal.execution.steps.CacheStep.executeWithoutCache(CacheStep.java:159)
+	at org.gradle.internal.execution.steps.CacheStep.execute(CacheStep.java:72)
+	at org.gradle.internal.execution.steps.CacheStep.execute(CacheStep.java:43)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:44)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:33)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:38)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:24)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:92)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$0(SkipUpToDateStep.java:85)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:76)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:26)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:94)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:79)
 	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:53)
 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:74)
 	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.lambda$execute$2(SkipEmptyWorkStep.java:78)
@@ -6923,22 +7002,9 @@ Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfigurat
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-Caused by: org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find org.xwalk:xwalk_shared_library:23.53.589.4.
-Searched in the following locations:
-  - https://maven.aliyun.com/repository/google/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://maven.aliyun.com/repository/public/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://maven.aliyun.com/repository/gradle-plugin/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://maven.aliyun.com/repository/jcenter/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://plugins.gradle.org/m2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://dl.google.com/dl/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://repo.maven.apache.org/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://jitpack.io/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-  - https://download.01.org/crosswalk/releases/crosswalk/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
-Required by:
-    project :app
 
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 2m 21s
-4 actionable tasks: 4 executed
+BUILD FAILED in 3m 13s
+22 actionable tasks: 22 executed
