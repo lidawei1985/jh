@@ -4,6 +4,7 @@ $appGradle = 'app/build.gradle'
 $gradle = Get-Content -LiteralPath $appGradle -Raw
 $gradle = $gradle.Replace('    api fileTree(dir: "libs", include: ["*.jar"])' + "`n", '')
 $gradle = $gradle.Replace("    implementation files('libs\\thunder.jar')" + "`n", '')
+$gradle = $gradle.Replace("dependencies {", "dependencies {`n    implementation files('libs/xwalk_shared_library-23.53.589.4.aar')")
 Set-Content -LiteralPath $appGradle -Value $gradle -Encoding UTF8
 
 $rootGradlePath = 'build.gradle'
@@ -13,10 +14,14 @@ $mirrorBlock = @'
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }
 '@
 $rootGradle = $rootGradle.Replace('        gradlePluginPortal()', $mirrorBlock + "`n        gradlePluginPortal()")
 Set-Content -LiteralPath $rootGradlePath -Value $rootGradle -Encoding UTF8
+
+$crosswalkBase = 'https://raw.githubusercontent.com/o0HalfLife0o/crosswalk/master/releases/crosswalk/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4'
+$crosswalkDir = 'app/libs'
+New-Item -ItemType Directory -Path $crosswalkDir -Force | Out-Null
+Invoke-WebRequest -Uri "$crosswalkBase/xwalk_shared_library-23.53.589.4.aar" -OutFile "$crosswalkDir/xwalk_shared_library-23.53.589.4.aar"
 
 $playerGradlePath = 'player/build.gradle'
 $playerGradle = Get-Content -LiteralPath $playerGradlePath -Raw
