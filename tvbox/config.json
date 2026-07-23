@@ -1,6 +1,30 @@
 {
   "sites": [],
-  "lives": [],
+  "lives": [
+    {
+      "name": "公开授权测试影片",
+      "boot": true,
+      "groups": [
+        {
+          "name": "播放测试",
+          "channel": [
+            {
+              "name": "Big Buck Bunny（Mux 测试流）",
+              "urls": [
+                "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+              ]
+            },
+            {
+              "name": "Apple HLS 官方示例",
+              "urls": [
+                "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "parses": [],
   "flags": [],
   "wallpaper": ""
