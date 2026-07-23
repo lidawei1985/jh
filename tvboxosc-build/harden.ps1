@@ -35,7 +35,7 @@ $exoHelper = [regex]::Replace($exoHelper, '(?m)^import com\.google\.android\.exo
 $exoHelper = [regex]::Replace(
     $exoHelper,
     '(?ms)\s*if \("rtmp"\.equals\(contentUri\.getScheme\(\)\)\) \{.*?\}\s*else if \("rtsp"\.equals\(contentUri\.getScheme\(\)\)\) \{',
-    "`n        if (\"rtsp\".equals(contentUri.getScheme())) {"
+    "`n        if (`"rtsp`".equals(contentUri.getScheme())) {"
 )
 Set-Content -LiteralPath $exoHelperPath -Value $exoHelper -Encoding UTF8
 
