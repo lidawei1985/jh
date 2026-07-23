@@ -6586,11 +6586,11 @@ java.lang.NumberFormatException: Not a number: 37.1
 > Task :player:packageDebugRenderscript NO-SOURCE
 > Task :app:compileDebugRenderscript NO-SOURCE
 > Task :app:generateDebugBuildConfig
-> Task :player:writeDebugAarMetadata
 > Task :app:generateDebugResValues
-> Task :app:javaPreCompileDebug
 > Task :app:generateDebugResources
 > Task :player:compileDebugRenderscript NO-SOURCE
+> Task :player:writeDebugAarMetadata
+> Task :app:javaPreCompileDebug
 > Task :player:generateDebugResValues
 > Task :player:generateDebugResources
 > Task :player:packageDebugResources
@@ -6607,6 +6607,7 @@ Execution failed for task ':app:mergeDebugResources'.
        - https://maven.aliyun.com/repository/public/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
        - https://maven.aliyun.com/repository/gradle-plugin/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
        - https://maven.aliyun.com/repository/jcenter/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
+       - https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
        - https://plugins.gradle.org/m2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
        - https://dl.google.com/dl/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
        - https://repo.maven.apache.org/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
@@ -6735,6 +6736,7 @@ Searched in the following locations:
   - https://maven.aliyun.com/repository/public/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
   - https://maven.aliyun.com/repository/gradle-plugin/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
   - https://maven.aliyun.com/repository/jcenter/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
+  - https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
   - https://plugins.gradle.org/m2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
   - https://dl.google.com/dl/android/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
   - https://repo.maven.apache.org/maven2/org/xwalk/xwalk_shared_library/23.53.589.4/xwalk_shared_library-23.53.589.4.pom
@@ -6746,5 +6748,5 @@ Required by:
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 1m 37s
+BUILD FAILED in 1m 47s
 7 actionable tasks: 7 executed
