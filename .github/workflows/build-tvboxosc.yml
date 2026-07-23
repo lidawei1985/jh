@@ -71,3 +71,14 @@ jobs:
           path: source/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 14
+
+      - name: Publish APK for direct download
+        run: |
+          mkdir -p tvboxosc-build/output
+          cp source/app/build/outputs/apk/debug/app-debug.apk tvboxosc-build/output/tvboxosc-hardened-debug.apk
+          sha256sum tvboxosc-build/output/tvboxosc-hardened-debug.apk > tvboxosc-build/output/tvboxosc-hardened-debug.apk.sha256
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -f tvboxosc-build/output/tvboxosc-hardened-debug.apk tvboxosc-build/output/tvboxosc-hardened-debug.apk.sha256
+          git commit -m "Publish hardened TVBoxOSC APK" || exit 0
+          git push
