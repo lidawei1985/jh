@@ -24,6 +24,14 @@ $crosswalkDir = 'app/libs'
 New-Item -ItemType Directory -Path $crosswalkDir -Force | Out-Null
 Invoke-WebRequest -Uri "$crosswalkBase/xwalk_shared_library-23.53.589.4.aar" -OutFile "$crosswalkDir/xwalk_shared_library-23.53.589.4.aar"
 
+# Crosswalk's archived AAR includes an ARM-only conceal helper that is not
+# required for its Java API and makes x86_64 Android reject the whole APK.
+Add-Type -AssemblyName System.IO.Compression
+$xwalkAar = Resolve-Path "$crosswalkDir/xwalk_shared_library-23.53.589.4.aar"
+$xwalkZip = [System.IO.Compression.ZipFile]::Open($xwalkAar, [System.IO.Compression.ZipArchiveMode]::Update)
+$xwalkZip.Entries | Where-Object { $_.FullName -like 'jni/*/libconceal.so' } | ForEach-Object { $_.Delete() }
+$xwalkZip.Dispose()
+
 $playerGradlePath = 'player/build.gradle'
 $playerGradle = Get-Content -LiteralPath $playerGradlePath -Raw
 $playerGradle = [regex]::Replace($playerGradle, '(?m)^\s*api "com\.google\.android\.exoplayer:extension-rtmp:[^"]+"\r?\n?', '')
