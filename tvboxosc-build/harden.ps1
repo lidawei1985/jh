@@ -6,6 +6,10 @@ $gradle = $gradle.Replace('    api fileTree(dir: "libs", include: ["*.jar"])' + 
 $gradle = $gradle.Replace("    implementation files('libs\\thunder.jar')" + "`n", '')
 $gradle = [regex]::Replace($gradle, "(?ms)^\s*implementation\('org\.xwalk:xwalk_shared_library:[^']+'\)\s*\{.*?^\s*\}\s*", '')
 $gradle = $gradle.Replace("dependencies {", "dependencies {`n    implementation files('libs/xwalk_shared_library-23.53.589.4.aar')")
+$gradle = $gradle.Replace(
+    "    implementation 'com.orhanobut:hawk:2.0.1'",
+    "    implementation('com.orhanobut:hawk:2.0.1') { exclude group: 'com.facebook.conceal' }"
+)
 Set-Content -LiteralPath $appGradle -Value $gradle -Encoding UTF8
 
 $rootGradlePath = 'build.gradle'
@@ -31,6 +35,15 @@ $xwalkAar = Resolve-Path "$crosswalkDir/xwalk_shared_library-23.53.589.4.aar"
 $xwalkZip = [System.IO.Compression.ZipFile]::Open($xwalkAar, [System.IO.Compression.ZipArchiveMode]::Update)
 $xwalkZip.Entries | Where-Object { $_.FullName -like 'jni/*/libconceal.so' } | ForEach-Object { $_.Delete() }
 $xwalkZip.Dispose()
+
+$appPath = 'app/src/main/java/com/github/tvbox/osc/base/App.java'
+$appSource = Get-Content -LiteralPath $appPath -Raw
+$appSource = $appSource.Replace(
+    'import com.orhanobut.hawk.Hawk;',
+    "import com.orhanobut.hawk.Hawk;`nimport com.orhanobut.hawk.NoEncryption;"
+)
+$appSource = $appSource.Replace('Hawk.init(this).build();', 'Hawk.init(this).setEncryption(new NoEncryption()).build();')
+Set-Content -LiteralPath $appPath -Value $appSource -Encoding UTF8
 
 $playerGradlePath = 'player/build.gradle'
 $playerGradle = Get-Content -LiteralPath $playerGradlePath -Raw
