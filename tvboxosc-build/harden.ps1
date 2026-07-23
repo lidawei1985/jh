@@ -32,7 +32,11 @@ Set-Content -LiteralPath $playerGradlePath -Value $playerGradle -Encoding UTF8
 $exoHelperPath = 'player/src/main/java/xyz/doikki/videoplayer/exo/ExoMediaSourceHelper.java'
 $exoHelper = Get-Content -LiteralPath $exoHelperPath -Raw
 $exoHelper = [regex]::Replace($exoHelper, '(?m)^import com\.google\.android\.exoplayer2\.ext\.rtmp\.RtmpDataSourceFactory;\r?\n', '')
-$exoHelper = $exoHelper.Replace('            return new RtmpDataSourceFactory();', '            return mHttpDataSourceFactory;')
+$exoHelper = [regex]::Replace(
+    $exoHelper,
+    '(?ms)\s*if \("rtmp"\.equals\(contentUri\.getScheme\(\)\)\) \{.*?\}\s*else if \("rtsp"\.equals\(contentUri\.getScheme\(\)\)\) \{',
+    "`n        if (\"rtsp\".equals(contentUri.getScheme())) {"
+)
 Set-Content -LiteralPath $exoHelperPath -Value $exoHelper -Encoding UTF8
 
 $manifestPath = 'app/src/main/AndroidManifest.xml'
