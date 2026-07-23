@@ -42,8 +42,18 @@ jobs:
           GRADLE_OPTS: -Dorg.gradle.internal.http.connectionTimeout=120000 -Dorg.gradle.internal.http.socketTimeout=120000
         run: |
           chmod +x gradlew
-          set -o pipefail
-          ./gradlew --no-daemon --max-workers=1 --stacktrace :app:assembleDebug 2>&1 | tee ../gradle-build.log
+          for attempt in 1 2 3; do
+            set +e
+            ./gradlew --no-daemon --max-workers=1 --stacktrace :app:assembleDebug 2>&1 | tee ../gradle-build.log
+            status=${PIPESTATUS[0]}
+            set -e
+            if [ "$status" -eq 0 ]; then
+              exit 0
+            fi
+            echo "Gradle attempt $attempt failed; retrying dependency downloads..."
+            sleep 15
+          done
+          exit "$status"
 
       - name: Upload build log
         if: always()
