@@ -6,10 +6,10 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/build-tvboxosc.yml'
-      - 'tvboxosc-build/**'
+      - 'tvboxosc-build/harden.ps1'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -51,6 +51,16 @@ jobs:
           path: gradle-build.log
           if-no-files-found: warn
           retention-days: 14
+
+      - name: Save failed build log to repository
+        if: failure()
+        run: |
+          cp gradle-build.log tvboxosc-build/latest-gradle-build.log
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add tvboxosc-build/latest-gradle-build.log
+          git commit -m "Save TVBoxOSC build failure log" || exit 0
+          git push
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
