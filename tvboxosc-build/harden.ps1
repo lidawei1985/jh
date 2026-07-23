@@ -105,3 +105,6 @@ if (Test-Path 'app/libs/thunder.jar') {
 if (Test-Path 'app/src/main/jniLibs') {
     Remove-Item -LiteralPath 'app/src/main/jniLibs' -Recurse -Force
 }
+if (Test-Path 'player/src/main/jniLibs') {
+    Remove-Item -LiteralPath 'player/src/main/jniLibs' -Recurse -Force
+}
