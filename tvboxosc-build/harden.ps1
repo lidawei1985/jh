@@ -4,6 +4,7 @@ $appGradle = 'app/build.gradle'
 $gradle = Get-Content -LiteralPath $appGradle -Raw
 $gradle = $gradle.Replace('    api fileTree(dir: "libs", include: ["*.jar"])' + "`n", '')
 $gradle = $gradle.Replace("    implementation files('libs\\thunder.jar')" + "`n", '')
+$gradle = [regex]::Replace($gradle, "(?ms)^\s*implementation\('org\.xwalk:xwalk_shared_library:[^']+'\)\s*\{.*?^\s*\}\s*", '')
 $gradle = $gradle.Replace("dependencies {", "dependencies {`n    implementation files('libs/xwalk_shared_library-23.53.589.4.aar')")
 Set-Content -LiteralPath $appGradle -Value $gradle -Encoding UTF8
 
