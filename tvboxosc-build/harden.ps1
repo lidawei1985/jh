@@ -6,6 +6,28 @@ $gradle = $gradle.Replace('    api fileTree(dir: "libs", include: ["*.jar"])' + 
 $gradle = $gradle.Replace("    implementation files('libs\\thunder.jar')" + "`n", '')
 Set-Content -LiteralPath $appGradle -Value $gradle -Encoding UTF8
 
+$rootGradlePath = 'build.gradle'
+$rootGradle = Get-Content -LiteralPath $rootGradlePath -Raw
+$mirrorBlock = @'
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+'@
+$rootGradle = $rootGradle.Replace('        gradlePluginPortal()', $mirrorBlock + "`n        gradlePluginPortal()")
+Set-Content -LiteralPath $rootGradlePath -Value $rootGradle -Encoding UTF8
+
+$playerGradlePath = 'player/build.gradle'
+$playerGradle = Get-Content -LiteralPath $playerGradlePath -Raw
+$playerGradle = [regex]::Replace($playerGradle, '(?m)^\s*api "com\.google\.android\.exoplayer:extension-rtmp:[^"]+"\r?\n?', '')
+Set-Content -LiteralPath $playerGradlePath -Value $playerGradle -Encoding UTF8
+
+$exoHelperPath = 'player/src/main/java/xyz/doikki/videoplayer/exo/ExoMediaSourceHelper.java'
+$exoHelper = Get-Content -LiteralPath $exoHelperPath -Raw
+$exoHelper = [regex]::Replace($exoHelper, '(?m)^import com\.google\.android\.exoplayer2\.ext\.rtmp\.RtmpDataSourceFactory;\r?\n', '')
+$exoHelper = $exoHelper.Replace('            return new RtmpDataSourceFactory();', '            return mHttpDataSourceFactory;')
+Set-Content -LiteralPath $exoHelperPath -Value $exoHelper -Encoding UTF8
+
 $manifestPath = 'app/src/main/AndroidManifest.xml'
 $manifest = Get-Content -LiteralPath $manifestPath -Raw
 $manifest = $manifest.Replace(
