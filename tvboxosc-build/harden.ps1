@@ -99,3 +99,9 @@ public final class Thunder {
 if (Test-Path 'app/libs/thunder.jar') {
     Remove-Item -LiteralPath 'app/libs/thunder.jar'
 }
+
+# The preserved project bundles ARM-only opaque player/Thunder libraries. They
+# are not used by the HTTPS/HLS/RTSP playback path and prevent x86_64 install.
+if (Test-Path 'app/src/main/jniLibs') {
+    Remove-Item -LiteralPath 'app/src/main/jniLibs' -Recurse -Force
+}
