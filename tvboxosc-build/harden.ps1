@@ -45,7 +45,7 @@ $appSource = $appSource.Replace(
 $appSource = $appSource.Replace('Hawk.init(this).build();', 'Hawk.init(this).setEncryption(new NoEncryption()).build();')
 $appSource = $appSource.Replace(
     'Hawk.put(HawkConfig.DEBUG_OPEN, false);',
-    "Hawk.put(HawkConfig.DEBUG_OPEN, false);`n        if (!Hawk.contains(HawkConfig.API_URL)) {`n            Hawk.put(HawkConfig.API_URL, `"https://raw.githubusercontent.com/lidawei1985/jh/main/tvbox/config.json`");`n        }"
+    "Hawk.put(HawkConfig.DEBUG_OPEN, false);`n        if (!Hawk.contains(HawkConfig.API_URL)) {`n            Hawk.put(HawkConfig.API_URL, `"https://cdn.jsdelivr.net/gh/lidawei1985/jh@main/tvbox/config.json`");`n        }"
 )
 Set-Content -LiteralPath $appPath -Value $appSource -Encoding UTF8
 

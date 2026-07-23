@@ -4,7 +4,7 @@
       "key": "public_vod",
       "name": "公开授权点播",
       "type": 1,
-      "api": "https://raw.githubusercontent.com/lidawei1985/jh/main/tvbox/vod.json",
+      "api": "https://cdn.jsdelivr.net/gh/lidawei1985/jh@main/tvbox/vod.json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
