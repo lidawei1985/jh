@@ -77,6 +77,10 @@ $assetLoader = @'
 '@
 $cacheLine = '        File cache = new File(App.getInstance().getFilesDir().getAbsolutePath() + "/" + MD5.encode(apiUrl));'
 $apiConfig = $apiConfig.Replace($cacheLine, $assetLoader + $cacheLine)
+$apiConfig = $apiConfig.Replace('for (JsonElement opt : infoJson.get("sites").getAsJsonArray()) {', 'for (JsonElement opt : infoJson.has("sites") ? infoJson.get("sites").getAsJsonArray() : new JsonArray()) {')
+$apiConfig = $apiConfig.Replace('for (JsonElement opt : infoJson.get("parses").getAsJsonArray()) {', 'for (JsonElement opt : infoJson.has("parses") ? infoJson.get("parses").getAsJsonArray() : new JsonArray()) {')
+$apiConfig = $apiConfig.Replace('for (JsonElement host : infoJson.getAsJsonArray("ads")) {', 'for (JsonElement host : infoJson.has("ads") ? infoJson.getAsJsonArray("ads") : new JsonArray()) {')
+$apiConfig = $apiConfig.Replace('for (JsonElement opt : infoJson.get("ijk").getAsJsonArray()) {', 'for (JsonElement opt : infoJson.has("ijk") ? infoJson.get("ijk").getAsJsonArray() : new JsonArray()) {')
 Set-Content -LiteralPath $apiConfigPath -Value $apiConfig -Encoding UTF8
 
 $playerGradlePath = 'player/build.gradle'
