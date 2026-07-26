@@ -45,9 +45,39 @@ $appSource = $appSource.Replace(
 $appSource = $appSource.Replace('Hawk.init(this).build();', 'Hawk.init(this).setEncryption(new NoEncryption()).build();')
 $appSource = $appSource.Replace(
     'Hawk.put(HawkConfig.DEBUG_OPEN, false);',
-    "Hawk.put(HawkConfig.DEBUG_OPEN, false);`n        if (!Hawk.contains(HawkConfig.API_URL)) {`n            Hawk.put(HawkConfig.API_URL, `"https://cdn.jsdelivr.net/gh/lidawei1985/jh@main/tvbox/config.json`");`n        }"
+    "Hawk.put(HawkConfig.DEBUG_OPEN, false);`n        if (!Hawk.contains(HawkConfig.API_URL)) {`n            Hawk.put(HawkConfig.API_URL, `"asset://configs/all.json`");`n        }"
 )
 Set-Content -LiteralPath $appPath -Value $appSource -Encoding UTF8
+
+$assetConfigDir = 'app/src/main/assets/configs'
+New-Item -ItemType Directory -Path $assetConfigDir -Force | Out-Null
+Get-ChildItem -LiteralPath '..' -Filter '*.json' -File | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination $assetConfigDir -Force
+}
+
+$apiConfigPath = 'app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java'
+$apiConfig = Get-Content -LiteralPath $apiConfigPath -Raw
+$apiConfig = $apiConfig.Replace('import java.io.BufferedReader;', "import java.io.BufferedReader;`nimport java.io.ByteArrayOutputStream;")
+$apiConfig = $apiConfig.Replace('import java.io.InputStreamReader;', "import java.io.InputStream;`nimport java.io.InputStreamReader;")
+$assetLoader = @'
+        if (apiUrl.startsWith("asset://")) {
+            String assetPath = apiUrl.substring("asset://".length());
+            try (InputStream input = App.getInstance().getAssets().open(assetPath)) {
+                ByteArrayOutputStream output = new ByteArrayOutputStream();
+                byte[] buffer = new byte[8192];
+                int count;
+                while ((count = input.read(buffer)) != -1) output.write(buffer, 0, count);
+                parseJson(apiUrl, output.toString("UTF-8"));
+                callback.success();
+            } catch (Throwable error) {
+                callback.error("Cannot load bundled config: " + error.getMessage());
+            }
+            return;
+        }
+'@
+$cacheLine = '        File cache = new File(App.getInstance().getFilesDir().getAbsolutePath() + "/" + MD5.encode(apiUrl));'
+$apiConfig = $apiConfig.Replace($cacheLine, $assetLoader + $cacheLine)
+Set-Content -LiteralPath $apiConfigPath -Value $apiConfig -Encoding UTF8
 
 $playerGradlePath = 'player/build.gradle'
 $playerGradle = Get-Content -LiteralPath $playerGradlePath -Raw
