@@ -45,7 +45,7 @@ $appSource = $appSource.Replace(
 $appSource = $appSource.Replace('Hawk.init(this).build();', 'Hawk.init(this).setEncryption(new NoEncryption()).build();')
 $appSource = $appSource.Replace(
     'Hawk.put(HawkConfig.DEBUG_OPEN, false);',
-    "Hawk.put(HawkConfig.DEBUG_OPEN, false);`n        if (!Hawk.contains(HawkConfig.API_URL)) {`n            Hawk.put(HawkConfig.API_URL, `"asset://configs/all.json`");`n        }"
+    "Hawk.put(HawkConfig.DEBUG_OPEN, false);`n        if (!Hawk.contains(HawkConfig.API_URL)) {`n            Hawk.put(HawkConfig.API_URL, `"asset://configs/1741901263936.json`");`n            java.util.ArrayList<String> bundledConfigs = new java.util.ArrayList<>();`n            bundledConfigs.add(`"asset://configs/1741901263936.json`");`n            bundledConfigs.add(`"asset://configs/zcwe.json`");`n            bundledConfigs.add(`"asset://configs/all.json`");`n            bundledConfigs.add(`"asset://configs/1131.json`");`n            bundledConfigs.add(`"asset://configs/cs1.json`");`n            bundledConfigs.add(`"asset://configs/cse.json`");`n            bundledConfigs.add(`"asset://configs/豆包改版.json`");`n            Hawk.put(HawkConfig.API_HISTORY, bundledConfigs);`n        }"
 )
 Set-Content -LiteralPath $appPath -Value $appSource -Encoding UTF8
 
@@ -82,6 +82,11 @@ $apiConfig = $apiConfig.Replace('for (JsonElement opt : infoJson.get("parses").g
 $apiConfig = $apiConfig.Replace('for (JsonElement host : infoJson.getAsJsonArray("ads")) {', 'for (JsonElement host : infoJson.has("ads") ? infoJson.getAsJsonArray("ads") : new JsonArray()) {')
 $apiConfig = $apiConfig.Replace('for (JsonElement opt : infoJson.get("ijk").getAsJsonArray()) {', 'for (JsonElement opt : infoJson.has("ijk") ? infoJson.get("ijk").getAsJsonArray() : new JsonArray()) {')
 Set-Content -LiteralPath $apiConfigPath -Value $apiConfig -Encoding UTF8
+
+$apiDialogPath = 'app/src/main/java/com/github/tvbox/osc/ui/dialog/ApiDialog.java'
+$apiDialog = Get-Content -LiteralPath $apiDialogPath -Raw
+$apiDialog = $apiDialog.Replace('(newApi.startsWith("http") || newApi.startsWith("clan"))', '(newApi.startsWith("http") || newApi.startsWith("clan") || newApi.startsWith("asset://"))')
+Set-Content -LiteralPath $apiDialogPath -Value $apiDialog -Encoding UTF8
 
 $playerGradlePath = 'player/build.gradle'
 $playerGradle = Get-Content -LiteralPath $playerGradlePath -Raw
