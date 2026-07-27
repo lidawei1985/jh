@@ -1,7 +1,7 @@
 {
-  "versionCode": 19,
-  "versionName": "1.0.19",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.19.apk",
-  "sha256": "00363a216a09bcc2f8869b0d09c08a344180da5a21eb4376fc4a3c4b754b3870",
-  "changelog": "删除主页影片预览；左侧导航改为纯文字并优化遥控器焦点；顶部电影菜单不再自动弹筛选；筛选选项点击后立即刷新并关闭面板。"
+  "versionCode": 20,
+  "versionName": "1.0.20",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.20.apk",
+  "sha256": "3c2a7be78b2f98c2e45e65749858bddb44d81e9ece052ee616b313063836935b",
+  "changelog": "新增数据源健康评分与自动降级；远程配置保留备份并支持失败回滚；正常直播自动更新多个订阅、频道去重、同台多线路、IPv4/IPv6分组及本地缓存回退。"
 }
