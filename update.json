@@ -2,6 +2,6 @@
   "versionCode": 16,
   "versionName": "1.0.16",
   "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.16.apk",
-  "sha256": "d3429f859b8fd1e32042ed74a6b2e4738761dab430c4eb82b328528430d3b7fe",
-  "changelog": "修复主页海报与安全边距；完善播放器控制栏、线路切换、正常/成人模式隔离；支持电视端在线更新与数据源同步。"
+  "sha256": "2ec885054912a8c783fb2854e9d50d5f4eff498a32458c1d5437e87321253e17",
+  "changelog": "修复主页预览图片四角未跟随外框的问题；图片和预览视频现在统一按玻璃面板圆角裁剪。"
 }
