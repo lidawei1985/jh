@@ -1,0 +1,7 @@
+{
+  "versionCode": 16,
+  "versionName": "1.0.16",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.16.apk",
+  "sha256": "dd5a511164665613dbd8c282b692e1cefb71667f1dd695ed3ca96b7e25f69d30",
+  "changelog": "修复主页海报兼容性；支持电视端直接下载并安装更新；优化成人直播去重、分类与播放线路。"
+}
