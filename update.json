@@ -1,7 +1,7 @@
 {
-  "versionCode": 20,
-  "versionName": "1.0.20",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.20.apk",
-  "sha256": "3c2a7be78b2f98c2e45e65749858bddb44d81e9ece052ee616b313063836935b",
-  "changelog": "新增数据源健康评分与自动降级；远程配置保留备份并支持失败回滚；正常直播自动更新多个订阅、频道去重、同台多线路、IPv4/IPv6分组及本地缓存回退。"
+  "versionCode": 21,
+  "versionName": "1.0.21",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.21.apk",
+  "sha256": "1d029fee7834fbd3559888e64968eb75cd59269e3a700e3871b98da34a390c78",
+  "changelog": "主页右下角新增紧凑版本徽标，位于系统极速内核上方；显示当前与最新版本；发现新版自动弹窗，可直接下载、校验并安装；彻底移除影片预览后台请求。"
 }
