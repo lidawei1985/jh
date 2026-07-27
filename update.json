@@ -1,7 +1,7 @@
 {
-  "versionCode": 16,
-  "versionName": "1.0.16",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.16.apk",
-  "sha256": "2ec885054912a8c783fb2854e9d50d5f4eff498a32458c1d5437e87321253e17",
-  "changelog": "修复主页预览图片四角未跟随外框的问题；图片和预览视频现在统一按玻璃面板圆角裁剪。"
+  "versionCode": 17,
+  "versionName": "1.0.17",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.17.apk",
+  "sha256": "7ea6895c5e4911b5da0fff3700f2b59ff009ea312fd6118e847ab3828cda76cb",
+  "changelog": "主页预览图片和视频跟随玻璃面板圆角；取消成人动漫标题过滤；保留正常/成人隔离、分类搜索、多线路和电视在线更新。"
 }
