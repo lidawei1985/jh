@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-$path = Join-Path (Split-Path -Parent $PSScriptRoot) 'all.json'
+$path = Join-Path (Split-Path -Parent $PSScriptRoot) 'TVBox多仓线路汇总.json'
 $text = Get-Content -LiteralPath $path -Raw -Encoding UTF8
 
 # JSON supports \uXXXX, but not Python-style \UXXXXXXXX escapes.
@@ -24,3 +24,4 @@ foreach ($char in $text.ToCharArray()) {
 $json = $builder.ToString() | ConvertFrom-Json
 $json | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath $path -Encoding UTF8
 Write-Output "Repaired $($json.urls.Count) entries: $path"
+
