@@ -1,7 +1,7 @@
 {
-  "versionCode": 17,
-  "versionName": "1.0.17",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.17.apk",
-  "sha256": "7ea6895c5e4911b5da0fff3700f2b59ff009ea312fd6118e847ab3828cda76cb",
-  "changelog": "主页预览图片和视频跟随玻璃面板圆角；取消成人动漫标题过滤；保留正常/成人隔离、分类搜索、多线路和电视在线更新。"
+  "versionCode": 18,
+  "versionName": "1.0.18",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.18.apk",
+  "sha256": "b7fc67ab9b3a147e2de82ce4eaa25f7f58d3e81a543bda22a938a4b6053f1e9e",
+  "changelog": "修复电影、电视剧、综艺和动漫父分类无数据；快捷分类改用真实子分类并默认加载；筛选面板改为黑色；修复筛选选中值判断。"
 }
