@@ -1,7 +1,7 @@
 {
-  "versionCode": 28,
-  "versionName": "1.0.28",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.28.apk",
-  "sha256": "e6eba395c8b64905a8a3aaf2972d0538619ee2225c9c30dedd0903e671c98b96",
-  "changelog": "修复电视端更新下载没有可见进度的问题；增加下载百分比与容量提示、失败原因和重试按钮；下载完成后自动进入安装授权或安装界面。"
+  "versionCode": 29,
+  "versionName": "1.0.29",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.29.apk",
+  "sha256": "a6c170ecb8843c939b5e5db659a2cdaa3361d0ac6e0a985b8fd4ea8eb39110fe",
+  "changelog": "新增隐私脱敏诊断日志：自动记录崩溃、保留最近7天且最多10MB；异常退出后提示导出；设置中可导出诊断ZIP或长按清除。更新检查支持三个服务器自动切换，并保留可见下载进度和失败重试。"
 }
