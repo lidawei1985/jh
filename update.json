@@ -1,7 +1,7 @@
 {
   "versionCode": 23,
   "versionName": "1.0.23",
-  "apkUrl": "https://api.github.com/repos/lidawei1985/LDW-Cinema/contents/releases/LDW-Cinema-v1.0.23.apk?ref=main",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.23.apk",
   "sha256": "503f9d6d22b24fc73cb5f57c797568a1d828c29bef6c553aeef5417b6def201f",
   "changelog": "保留原有分类和节目源；正常首页加入真实邵氏电影并将剩余分类收纳到最后的类别；三级伦理迁入成人模式；成人模式双击返回正常首页；新增人名与片名拼音首字母搜索；左侧六项导航均匀分布。"
 }
