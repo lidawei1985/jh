@@ -1,7 +1,7 @@
 {
-  "versionCode": 25,
-  "versionName": "1.0.25",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.25.apk",
-  "sha256": "3e804b69b0e89b773ab4ea74329c1579cda8b789ac185e9d27c17de9d5419596",
-  "changelog": "统一搜索框自动识别中文片名、演员导演姓名和片名拼音首字母；移除多余搜索模式按钮；实测MTCCS可找到蜜桃成熟时，舒淇可找到演员作品。成人模式取消类别按钮并将全部原分类展开到第二行。"
+  "versionCode": 26,
+  "versionName": "1.0.26",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.26.apk",
+  "sha256": "b32fe9e0e33ff92c1c52060db8cebb97b6a7432c6db7958e95fec989741815d5",
+  "changelog": "修复拼音首字母搜索被普通网页热词污染的问题；LLZ只解析为李丽珍并返回其影视作品，不再出现刘令姿、缩写释义等无关结果；保留中文片名、演员导演姓名及MTCCS片名首字母搜索。"
 }
