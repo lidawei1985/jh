@@ -1,7 +1,7 @@
 {
-  "versionCode": 24,
-  "versionName": "1.0.24",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.24.apk",
-  "sha256": "599ff4eafb3eee7c7e477d2d6e7c1ffc7be3fa18b6ab3def1e2d0505c846439a",
-  "changelog": "修复中文搜索与远程输入编码；修复多源搜索过早结束导致空结果；增加可靠搜索兜底。已实测搜索蜜桃成熟时可返回多个结果并打开详情。"
+  "versionCode": 25,
+  "versionName": "1.0.25",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.25.apk",
+  "sha256": "3e804b69b0e89b773ab4ea74329c1579cda8b789ac185e9d27c17de9d5419596",
+  "changelog": "统一搜索框自动识别中文片名、演员导演姓名和片名拼音首字母；移除多余搜索模式按钮；实测MTCCS可找到蜜桃成熟时，舒淇可找到演员作品。成人模式取消类别按钮并将全部原分类展开到第二行。"
 }
