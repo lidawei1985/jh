@@ -1,7 +1,7 @@
 {
-  "versionCode": 34,
-  "versionName": "1.0.34",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.34.apk",
-  "sha256": "99d093c67108ca1a53bef53054bbf0c103e3e0e45b76145c4c1a5394705334e0",
-  "changelog": "按电视实际可用高度动态居中推荐海报，消除海报贴顶和不同屏幕比例位置失衡。启动密码改为每次APP进程只输入一次，运行期间不重复询问，彻底关闭或崩溃后重新启动再次要求密码；保留修改密码和启动密码开关。更新进度窗口提供取消下载、关闭及返回取消。"
+  "versionCode": 36,
+  "versionName": "1.0.36",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.36.apk",
+  "sha256": "1c1d821f613e93cbd8a13d8fcd628bbe3634c56978d218e43dcfc4901090a9bb",
+  "changelog": "完整修复电视更新流程：下载窗口显示进度，并显示取消下载和关闭按钮；遥控器返回可取消并删除残缺文件。下载完成需要未知应用权限时保存待安装APK，开启允许后按返回键即可自动继续弹出安装确认，即使APP被系统回收也可恢复。海报动态居中；密码每次APP进程仅输入一次，关闭或崩溃后重新要求。"
 }
