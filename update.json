@@ -1,7 +1,7 @@
 {
-  "versionCode": 26,
-  "versionName": "1.0.26",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.26.apk",
-  "sha256": "b32fe9e0e33ff92c1c52060db8cebb97b6a7432c6db7958e95fec989741815d5",
-  "changelog": "修复拼音首字母搜索被普通网页热词污染的问题；LLZ只解析为李丽珍并返回其影视作品，不再出现刘令姿、缩写释义等无关结果；保留中文片名、演员导演姓名及MTCCS片名首字母搜索。"
+  "versionCode": 27,
+  "versionName": "1.0.27",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.27.apk",
+  "sha256": "d5c41788eb22ce003a6ad97cad95d3c6f8b7a01a2ce31b1565c650c51ed28e74",
+  "changelog": "完善正常与成人双模式首页海报布局、自动滚动和坏图移除；优化成人分类双行展示；加入启动密码开关与本次解锁记忆；修复LLZ、MTCCS、SQ等演员、片名拼音首字母搜索；仅显示已验证的有效豆瓣评分。"
 }
