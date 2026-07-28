@@ -1,7 +1,7 @@
 {
-  "versionCode": 36,
-  "versionName": "1.0.36",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.36.apk",
-  "sha256": "1c1d821f613e93cbd8a13d8fcd628bbe3634c56978d218e43dcfc4901090a9bb",
-  "changelog": "完整修复电视更新流程：下载窗口显示进度，并显示取消下载和关闭按钮；遥控器返回可取消并删除残缺文件。下载完成需要未知应用权限时保存待安装APK，开启允许后按返回键即可自动继续弹出安装确认，即使APP被系统回收也可恢复。海报动态居中；密码每次APP进程仅输入一次，关闭或崩溃后重新要求。"
+  "versionCode": 37,
+  "versionName": "1.0.37",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.37.apk",
+  "sha256": "88945618c68e7adc56b694396a7588bb6e52194edd21e91986401ee65eb9dd21",
+  "changelog": "更新窗口改为APP自绘固定布局，不再依赖电视系统ProgressDialog按钮栏；下载进度、百分比、关闭和取消下载始终可见并可用遥控器选择。保留最快线路自动选择、返回键取消、残缺文件清理、授权返回继续安装、海报动态居中和每进程一次密码。"
 }
