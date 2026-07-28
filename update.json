@@ -1,7 +1,7 @@
 {
-  "versionCode": 39,
-  "versionName": "1.0.39",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.39.apk",
-  "sha256": "e8170a018fa9556f4bdc53a7b99602fbcfdb3bb346059af014c3652c0257e643",
-  "changelog": "修复最新、热度和评分按钮仅显示但不执行排序的问题；向数据源传递排序条件，并在数据源不支持时由客户端按更新时间、热度和真实评分兜底排序。播放器解析提示改为正在自动选择最快线路，不再显示嗅探播放地址。"
+  "versionCode": 40,
+  "versionName": "1.0.40",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.40.apk",
+  "sha256": "c4a77fe8df0674a073153232c7ad85f9eea9f564d5cc46be5b1df9f0efb76827",
+  "changelog": "紧急恢复稳定版播放流程：移除导致电视无法播放的自动换内核、自动切备用线路和直链强制判断。点击立即播放重新按片源原始解析方式执行；保留最新、热度和评分真实排序修复。"
 }
