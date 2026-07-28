@@ -1,7 +1,7 @@
 {
-  "versionCode": 21,
-  "versionName": "1.0.21",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/jh/main/releases/LDW-Cinema-v1.0.21.apk",
-  "sha256": "1d029fee7834fbd3559888e64968eb75cd59269e3a700e3871b98da34a390c78",
-  "changelog": "主页右下角新增紧凑版本徽标，位于系统极速内核上方；显示当前与最新版本；发现新版自动弹窗，可直接下载、校验并安装；彻底移除影片预览后台请求。"
+  "versionCode": 23,
+  "versionName": "1.0.23",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.23.apk",
+  "sha256": "503f9d6d22b24fc73cb5f57c797568a1d828c29bef6c553aeef5417b6def201f",
+  "changelog": "保留原有分类和节目源；正常首页加入真实邵氏电影并将剩余分类收纳到最后的类别；三级伦理迁入成人模式；成人模式双击返回正常首页；新增人名与片名拼音首字母搜索；左侧六项导航均匀分布。"
 }

@@ -4,7 +4,7 @@
       "key": "public_vod",
       "name": "公开授权点播",
       "type": 1,
-      "api": "https://cdn.jsdelivr.net/gh/lidawei1985/jh@main/tvbox/vod.json",
+      "api": "https://cdn.jsdelivr.net/gh/lidawei1985/LDW-Cinema@main/tvbox/vod.json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -14,7 +14,7 @@
     {
       "name": "公开测试直播",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/gh/lidawei1985/jh@main/tvbox/live.txt"
+      "url": "https://cdn.jsdelivr.net/gh/lidawei1985/LDW-Cinema@main/tvbox/live.txt"
     }
   ],
   "parses": [

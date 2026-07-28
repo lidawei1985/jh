@@ -5,7 +5,7 @@
 ## 配置地址
 
 ```text
-https://raw.githubusercontent.com/lidawei1985/jh/main/tvbox/config.json
+https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/tvbox/config.json
 ```
 
 ## 本机应用
