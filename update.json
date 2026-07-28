@@ -1,7 +1,7 @@
 {
-  "versionCode": 29,
-  "versionName": "1.0.29",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.29.apk",
-  "sha256": "7c888e87eeb3ff72607c96fd2e946f5b8dce0113dea2217ba32497fe6b6295fd",
-  "changelog": "新增隐私脱敏诊断日志与三个更新服务器自动切换；下载显示进度并支持失败重试。主页海报统一尺寸、等比例填充和圆角裁切，修复循环滚动到末尾时可见跳转。"
+  "versionCode": 30,
+  "versionName": "1.0.30",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.30.apk",
+  "sha256": "5a7f9058ba2614084b2ca15b2c6eb9b4a1f27ffeb38648e04b3ef996659ec455",
+  "changelog": "修复更新卡住和速度慢：版本清单与APK下载均支持三线路；下载前并行测速选择最快线路，持续低速自动换线，并显示实时速度及预计剩余时间。支持取消和遥控返回，删除残缺文件。修正记住本次解锁仅在当前运行期间有效；保留诊断日志、统一海报尺寸间距和无感循环。"
 }
