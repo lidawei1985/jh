@@ -1,7 +1,7 @@
 {
-  "versionCode": 23,
-  "versionName": "1.0.23",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.23.apk",
-  "sha256": "503f9d6d22b24fc73cb5f57c797568a1d828c29bef6c553aeef5417b6def201f",
-  "changelog": "保留原有分类和节目源；正常首页加入真实邵氏电影并将剩余分类收纳到最后的类别；三级伦理迁入成人模式；成人模式双击返回正常首页；新增人名与片名拼音首字母搜索；左侧六项导航均匀分布。"
+  "versionCode": 24,
+  "versionName": "1.0.24",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.24.apk",
+  "sha256": "599ff4eafb3eee7c7e477d2d6e7c1ffc7be3fa18b6ab3def1e2d0505c846439a",
+  "changelog": "修复中文搜索与远程输入编码；修复多源搜索过早结束导致空结果；增加可靠搜索兜底。已实测搜索蜜桃成熟时可返回多个结果并打开详情。"
 }
