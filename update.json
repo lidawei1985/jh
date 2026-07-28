@@ -1,7 +1,7 @@
 {
   "versionCode": 28,
   "versionName": "1.0.28",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.28.apk",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.28.apk",
   "sha256": "e6eba395c8b64905a8a3aaf2972d0538619ee2225c9c30dedd0903e671c98b96",
   "changelog": "修复电视端更新下载没有可见进度的问题；增加下载百分比与容量提示、失败原因和重试按钮；下载完成后自动进入安装授权或安装界面。"
 }
