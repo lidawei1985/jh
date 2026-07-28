@@ -1,7 +1,7 @@
 {
-  "versionCode": 27,
-  "versionName": "1.0.27",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.27.apk",
-  "sha256": "d5c41788eb22ce003a6ad97cad95d3c6f8b7a01a2ce31b1565c650c51ed28e74",
-  "changelog": "完善正常与成人双模式首页海报布局、自动滚动和坏图移除；优化成人分类双行展示；加入启动密码开关与本次解锁记忆；修复LLZ、MTCCS、SQ等演员、片名拼音首字母搜索；仅显示已验证的有效豆瓣评分。"
+  "versionCode": 28,
+  "versionName": "1.0.28",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/raw/refs/heads/main/releases/LDW-Cinema-v1.0.28.apk",
+  "sha256": "e6eba395c8b64905a8a3aaf2972d0538619ee2225c9c30dedd0903e671c98b96",
+  "changelog": "修复电视端更新下载没有可见进度的问题；增加下载百分比与容量提示、失败原因和重试按钮；下载完成后自动进入安装授权或安装界面。"
 }
