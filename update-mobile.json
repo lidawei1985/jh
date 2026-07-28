@@ -2,10 +2,10 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 48,
-  "versionName": "1.0.38-mobile.48",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v48.apk",
-  "sha256": "BFAEDF6F7BCDA352B9D085F0CBF789DD3D2FFDDE8DFB91F01291D942B2E35108",
-  "changelog": "手机版启用独立安装包和独立更新通道；电视版与手机版可同时安装；保留共享片源、搜索规则和直播配置同步；增加平台、包名、签名和 SHA-256 安全校验。",
+  "versionCode": 49,
+  "versionName": "1.0.38-mobile.49",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v49.apk",
+  "sha256": "7D3A0D829AF8FA1F6B7A7833C75FC2A80AD90440B9EC66895D437B67307EBC46",
+  "changelog": "修复手机版直播页返回后异步播放导致的崩溃；直播首次返回直接回主页；补全推送页手机底部导航；完成主页所有菜单进入和返回回归测试。",
   "minimumSupportedVersionCode": 48
 }
