@@ -1,7 +1,7 @@
 {
-  "versionCode": 33,
-  "versionName": "1.0.33",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.33.apk",
-  "sha256": "6f83f927d09f4668a09df04193fb92e7eda12507f3f416cf2fb082cff883a428",
-  "changelog": "修复电视设置页密码选项焦点：修改密码、启动密码开关、记住本次解锁可按顺序用遥控器访问。修复更新下载窗口按钮：进度条显示后明确提供取消下载和关闭按钮，遥控器返回也会取消下载、关闭窗口并删除残缺文件。包含1.0.32的成人模式退出焦点及1.0.31的播放修复。"
+  "versionCode": 34,
+  "versionName": "1.0.34",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.34.apk",
+  "sha256": "99d093c67108ca1a53bef53054bbf0c103e3e0e45b76145c4c1a5394705334e0",
+  "changelog": "按电视实际可用高度动态居中推荐海报，消除海报贴顶和不同屏幕比例位置失衡。启动密码改为每次APP进程只输入一次，运行期间不重复询问，彻底关闭或崩溃后重新启动再次要求密码；保留修改密码和启动密码开关。更新进度窗口提供取消下载、关闭及返回取消。"
 }
