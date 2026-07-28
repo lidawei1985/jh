@@ -1,7 +1,7 @@
 {
-  "versionCode": 30,
-  "versionName": "1.0.30",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.30.apk",
-  "sha256": "5a7f9058ba2614084b2ca15b2c6eb9b4a1f27ffeb38648e04b3ef996659ec455",
-  "changelog": "修复更新卡住和速度慢：版本清单与APK下载均支持三线路；下载前并行测速选择最快线路，持续低速自动换线，并显示实时速度及预计剩余时间。支持取消和遥控返回，删除残缺文件。修正记住本次解锁仅在当前运行期间有效；保留诊断日志、统一海报尺寸间距和无感循环。"
+  "versionCode": 31,
+  "versionName": "1.0.31",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.31.apk",
+  "sha256": "0eeb176f7fbcf56c2dcc6c649a161ea616c61791b2f87d077eb3ee0c2e33a49c",
+  "changelog": "修复电视端播放回归：对源接口返回的HLS、MP4等直链立即播放，不再错误进入WebView嗅探并等待超时；真正解析失败时自动切换备用线路和播放器内核。保留1.0.30的海报统一、平滑循环、更新三线路测速、速度/剩余时间、取消和残缺文件清理。"
 }
