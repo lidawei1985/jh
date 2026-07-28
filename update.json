@@ -1,7 +1,7 @@
 {
-  "versionCode": 37,
-  "versionName": "1.0.37",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.37.apk",
-  "sha256": "88945618c68e7adc56b694396a7588bb6e52194edd21e91986401ee65eb9dd21",
-  "changelog": "更新窗口改为APP自绘固定布局，不再依赖电视系统ProgressDialog按钮栏；下载进度、百分比、关闭和取消下载始终可见并可用遥控器选择。保留最快线路自动选择、返回键取消、残缺文件清理、授权返回继续安装、海报动态居中和每进程一次密码。"
+  "versionCode": 39,
+  "versionName": "1.0.39",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.39.apk",
+  "sha256": "e8170a018fa9556f4bdc53a7b99602fbcfdb3bb346059af014c3652c0257e643",
+  "changelog": "修复最新、热度和评分按钮仅显示但不执行排序的问题；向数据源传递排序条件，并在数据源不支持时由客户端按更新时间、热度和真实评分兜底排序。播放器解析提示改为正在自动选择最快线路，不再显示嗅探播放地址。"
 }
