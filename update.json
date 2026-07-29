@@ -1,7 +1,7 @@
 {
-  "versionCode": 48,
-  "versionName": "1.0.48",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.48/LDW-Cinema-v1.0.48.apk",
-  "sha256": "6912c7a876ecab83b79287b7cd065dad94f347f3369a8894db54be985127326d",
-  "changelog": "修复主页大量海报无法显示的问题：图片加载失败后永久剔除并自动补位，不再反复出现空白海报；今日精选改为持续循环轮换，并严格只展示明确标记为 2026 年的影视内容；其他界面、片源和交互保持不变。"
+  "versionCode": 49,
+  "versionName": "1.0.49",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.49/LDW-Cinema-v1.0.49.apk",
+  "sha256": "b82798c042f36eaedc06855ee2fb996a59e91bd4aa7b4fdb1ea172fd4fd4594e",
+  "changelog": "今日精选仅直推 2026 年真人电影和电视剧，排除动画、动漫、少儿、科普教育、纪录片、综艺、音乐、体育及直播等其他品类；继续保留循环旋转、坏海报自动剔除补位和原有主页设计。"
 }
