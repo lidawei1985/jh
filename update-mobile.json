@@ -2,10 +2,10 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 50,
-  "versionName": "1.0.38-mobile.50",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v50.apk",
-  "sha256": "5C3E49D5B0F7F497643D883949DC4696D7A2A86BBA47AB4C2294CF4588E6ABB1",
-  "changelog": "修复电影、电视剧、邵氏电影、榜单、类别等页面点击底部首页后顶部 LOGO、时间和菜单显示不全；返回首页时强制恢复顶部布局并滚动到页面顶部；同步验证普通与成人模式。",
+  "versionCode": 51,
+  "versionName": "1.0.38-mobile.51",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v51.apk",
+  "sha256": "A4A66482EC14D022018F5B689BF6A4BA665FC9670675C89F0489FDEB9B076005",
+  "changelog": "恢复并稳定手机版继续观看：修复内容架刷新后被自身去重隐藏、普通和成人记录在截断后过滤导致丢失，以及单条记录重复显示；同步审计播放器、导航、海报、更新和成人模式功能。",
   "minimumSupportedVersionCode": 48
 }
