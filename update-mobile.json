@@ -2,10 +2,10 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 51,
-  "versionName": "1.0.38-mobile.51",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v51.apk",
-  "sha256": "A4A66482EC14D022018F5B689BF6A4BA665FC9670675C89F0489FDEB9B076005",
-  "changelog": "恢复并稳定手机版继续观看：修复内容架刷新后被自身去重隐藏、普通和成人记录在截断后过滤导致丢失，以及单条记录重复显示；同步审计播放器、导航、海报、更新和成人模式功能。",
+  "versionCode": 52,
+  "versionName": "1.0.38-mobile.52",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v52.apk",
+  "sha256": "33EFB5E28D56E6FC1E5AFD4F06BEDDFB217E3B05C2D074E1CA744D9F32CA13D7",
+  "changelog": "完善手机版继续观看与导航：海报直接续播，显示集数、线路、剩余时间及播放/详情/更多操作；返回键按真实进入路径逐级回退；播放器采用前后10秒、播放暂停和更多菜单布局，并同步普通与成人模式。",
   "minimumSupportedVersionCode": 48
 }
