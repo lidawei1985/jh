@@ -2,10 +2,12 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 52,
-  "versionName": "1.0.38-mobile.52",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v52.apk",
-  "sha256": "33EFB5E28D56E6FC1E5AFD4F06BEDDFB217E3B05C2D074E1CA744D9F32CA13D7",
-  "changelog": "完善手机版继续观看与导航：海报直接续播，显示集数、线路、剩余时间及播放/详情/更多操作；返回键按真实进入路径逐级回退；播放器采用前后10秒、播放暂停和更多菜单布局，并同步普通与成人模式。",
+  "versionCode": 53,
+  "versionName": "1.0.38-mobile.53",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v53.apk",
+  "sha256": "7CA166C28135803312D1DA21B8FCD95873D4D1A96E5BF9CC7D83AB8FF577EFDC",
+  "changelog": "完善海报完整性与连续滚动：海报按原始比例完整显示，不裁切、不拉伸，空余区域使用同图暗化背景填充；加载失败保留品牌占位；推荐海报改为像素级无跳转循环，并同步普通与成人模式。",
   "minimumSupportedVersionCode": 48
 }
+
+
