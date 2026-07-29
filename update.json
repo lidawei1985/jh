@@ -1,7 +1,7 @@
 {
-  "versionCode": 50,
-  "versionName": "1.0.50",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.50/LDW-Cinema-v1.0.50.apk",
-  "sha256": "c99a745e1e17ccb1d9833c834068d8427a92971655fce27788e5af1b93d9172d",
-  "changelog": "修复启动进入主页后“为你推荐”自动改变选中项、抢占遥控器焦点并造成界面乱跳的问题；推荐内容架改为完全由用户手动浏览，今日精选的 2026 年电影电视剧循环旋转保持不变。"
+  "versionCode": 51,
+  "versionName": "1.0.51",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.51/LDW-Cinema-v1.0.51.apk",
+  "sha256": "e19fa7242139c7bb9843cbf2da2feacc2bbb677e4df1a8be91a826dac90fdceb",
+  "changelog": "根据电视实拍复现修复主页乱跳：为你推荐不再复制多份数据，坏海报只移除对应条目并保持列表稳定，避免连续刷新导致焦点和海报位置跳动；今日精选循环逻辑保持不变。"
 }
