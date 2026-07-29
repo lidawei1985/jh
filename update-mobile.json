@@ -2,12 +2,13 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 53,
-  "versionName": "1.0.38-mobile.53",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v53.apk",
-  "sha256": "7CA166C28135803312D1DA21B8FCD95873D4D1A96E5BF9CC7D83AB8FF577EFDC",
-  "changelog": "完善海报完整性与连续滚动：海报按原始比例完整显示，不裁切、不拉伸，空余区域使用同图暗化背景填充；加载失败保留品牌占位；推荐海报改为像素级无跳转循环，并同步普通与成人模式。",
+  "versionCode": 54,
+  "versionName": "1.0.38-mobile.54",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v54.apk",
+  "sha256": "5C621975A129779796665479F62CAF11AC6704BE623310FB7064FDFF13A19DBE",
+  "changelog": "重构手机版首页分类与导航：片源集成到LOGO；电影、电视剧、邵氏、榜单和类型推荐改为内容架并提供完整分类更多入口；海报直达详情；修复各菜单筛选覆盖片源分类编号及分类列表返回首页失效。",
   "minimumSupportedVersionCode": 48
 }
+
 
 
