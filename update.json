@@ -1,7 +1,7 @@
 {
-  "versionCode": 41,
-  "versionName": "1.0.41",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/LDW-Cinema-v1.0.41.apk",
-  "sha256": "712e8e7bd0dc53537ddf4f22070295e62ca32ce4f18fd021123fbab2a58c2ed3",
-  "changelog": "稳定播放修复：详情页优先选择ffm3u8等真实视频直链，自动纠正历史记录中的网页解析线路；默认使用APK完整内置的Exo高清内核，不再自动切内核或自动切线路。MuMu实测点击0.6秒进入播放器并正常出画面。保留最新、热度、评分真实排序。"
+  "versionCode": 47,
+  "versionName": "1.0.47",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.47/LDW-Cinema-v1.0.47.apk",
+  "sha256": "ab0df7d7f38f7f89c8f68ac4e8cdafa18d9a11b1188f463bea862f6aa6969bb2",
+  "changelog": "完善本地影视索引与拼音首字母、人名、片名和导演搜索；加入搜索缓存、相关度排序和去重；增强数据源健康检查、远程源同步校验与回滚；更新下载支持进度、取消、重试和授权返回后继续安装；修复电视端稳定性问题。"
 }
