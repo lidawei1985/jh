@@ -1,7 +1,7 @@
 {
-  "versionCode": 53,
-  "versionName": "1.0.53",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.53/LDW-Cinema-v1.0.53.apk",
-  "sha256": "a7bf22cb80a09fd92d7e261418c1616faee0d522e2d07d3b49c62f60d4a81f71",
-  "changelog": "修复今日精选小海报被同一张海报占满的问题：按影片标题去重并使用唯一窗口轮换，保留循环旋转且不再重复显示同片。"
+  "versionCode": 55,
+  "versionName": "1.0.55",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.55/LDW-Cinema-v1.0.55.apk",
+  "sha256": "84dffae11f5e7ec5ffaf157b063aff098a0a7f5424704ec06b2544f143f97854",
+  "changelog": "精选区域再次加强去重：同片名或同海报地址不再同时出现；今日精选仅保留明确类型的 2026 年电影和电视剧，轮换间隔 8 秒并丢弃过期图片请求。"
 }
