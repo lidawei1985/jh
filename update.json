@@ -1,7 +1,7 @@
 {
-  "versionCode": 49,
-  "versionName": "1.0.49",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.49/LDW-Cinema-v1.0.49.apk",
-  "sha256": "b82798c042f36eaedc06855ee2fb996a59e91bd4aa7b4fdb1ea172fd4fd4594e",
-  "changelog": "今日精选仅直推 2026 年真人电影和电视剧，排除动画、动漫、少儿、科普教育、纪录片、综艺、音乐、体育及直播等其他品类；继续保留循环旋转、坏海报自动剔除补位和原有主页设计。"
+  "versionCode": 50,
+  "versionName": "1.0.50",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.50/LDW-Cinema-v1.0.50.apk",
+  "sha256": "c99a745e1e17ccb1d9833c834068d8427a92971655fce27788e5af1b93d9172d",
+  "changelog": "修复启动进入主页后“为你推荐”自动改变选中项、抢占遥控器焦点并造成界面乱跳的问题；推荐内容架改为完全由用户手动浏览，今日精选的 2026 年电影电视剧循环旋转保持不变。"
 }
