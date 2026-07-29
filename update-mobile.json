@@ -2,11 +2,11 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 54,
-  "versionName": "1.0.38-mobile.54",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v54.apk",
-  "sha256": "5C621975A129779796665479F62CAF11AC6704BE623310FB7064FDFF13A19DBE",
-  "changelog": "重构手机版首页分类与导航：片源集成到LOGO；电影、电视剧、邵氏、榜单和类型推荐改为内容架并提供完整分类更多入口；海报直达详情；修复各菜单筛选覆盖片源分类编号及分类列表返回首页失效。",
+  "versionCode": 55,
+  "versionName": "1.0.38-mobile.55",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v55.apk",
+  "sha256": "20CBC50EC87F1565D7B2FFBD5C4547370776E4554D8079E7B47A8BA7CD4107B3",
+  "changelog": "新增奈飞式今日精选主视觉，只展示通过影片ID、真实片源、详情、播放列表和海报验证的内容；失败海报自动移除补位；继续观看移动到底部导航上方并支持选中展开；菜单统一炭黑与奈飞红视觉，普通和成人模式同步且记录隔离。",
   "minimumSupportedVersionCode": 48
 }
 
