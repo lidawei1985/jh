@@ -2,10 +2,10 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 65,
-  "versionName": "1.0.65-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v65.apk",
-  "sha256": "4A2E047FFFC96B3D26B3A755973A2ABC0DF6A41565DC1C67984A159B9D4BDF59",
-  "changelog": "完成启动缓存加速、奈飞剧场和真实海报稳定显示；整理我的单列菜单；新增设备绑定会员授权、成人入口权限、消息铃铛和通知中心；修复播放器控制与逐级返回；收紧手机版首页顶部留白并上移快捷按钮；继续播放悬浮卡片增加关闭按钮；今日精选缓存真实内容和大图，冷启动进入首页即显示。",
+  "versionCode": 66,
+  "versionName": "1.0.66-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v66.apk",
+  "sha256": "798688CEFC48BB91DB44718E0001EA286692C38232E78937AB97249E85DD8202",
+  "changelog": "完成启动缓存加速、奈飞剧场和真实海报稳定显示；整理我的单列菜单；新增设备绑定会员授权、成人入口权限、消息铃铛和通知中心；修复播放器控制与逐级返回；收紧手机版首页顶部留白并上移快捷按钮；继续播放悬浮卡片增加关闭按钮；今日精选冷启动即显示；修复各栏目更多页筛选无数据。",
   "minimumSupportedVersionCode": 49
 }
