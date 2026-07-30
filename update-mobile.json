@@ -2,15 +2,14 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 84,
-  "versionName": "1.0.84-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v84.apk",
+  "versionCode": 87,
+  "versionName": "1.0.87-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v87.apk",
   "apkUrls": [
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v84.apk",
-    "https://codeberg.org/sbqqqiiiu2/LDW-Cinema-Mobile/raw/branch/main/releases/mobile/LDW-Cinema-Mobile-v84.apk",
-    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v84.apk"
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v87.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v87.apk"
   ],
-  "sha256": "4006B4675CB8EB74DB35FA5730D45716997FCFBD14A2A7BB154FA59AF5DA2D92",
-  "changelog": "基础页采用奈飞式沉浸按钮：当前分类红色突出，其余分类低干扰显示；历史、直播、推送、收藏统一为深色图标工具按钮，并保持正常与成人模式功能一致。",
+  "sha256": "2839FA01C8355E541ECC7B36516F4DD9D2ED03338EB381A204F5BC8829967FA8",
+  "changelog": "修复搜索页面内容层遮挡；单字母、拼音首字母和演员联想支持本地即时结果及在线补全；修复播放器慢源主线程卡死、详情失效来源闪退，并补全内容首页标签与筛选交互。",
   "minimumSupportedVersionCode": 49
 }
