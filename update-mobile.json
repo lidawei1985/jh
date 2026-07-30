@@ -2,10 +2,14 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 77,
-  "versionName": "1.0.77-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v77.apk",
-  "sha256": "EFD7E7CECB3E69B492D91B4FBDDEC4062574140BB3D434D4AB6DAF341302590D",
-  "changelog": "新增全球电视：接入 iptv-org 官方公开 JSON，按常用、华语、亚洲、欧美、其他地区和类型分类；同频道多线路自动合并去重；本地缓存优先、每日后台同步、异常数据拒绝替换并保留上一版回滚；完善自有合法片源导入、验证、历史与失败恢复；修复手机导入窗口显示和返回。",
+  "versionCode": 78,
+  "versionName": "1.0.78-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v78.apk",
+  "apkUrls": [
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v78.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v78.apk"
+  ],
+  "sha256": "29193EE0FECBC6CFD3724571B1FB4EB2763FD1C73941B4E84BA461774D158500",
+  "changelog": "重做手机版搜索：使用系统键盘，新增搜索前、联想和海报结果三态，扩大跨源结果并支持筛选与返回恢复；更新下载增加双线路、断点续传、实时速度、停滞自动重连和取消操作；修复搜索页启动崩溃。",
   "minimumSupportedVersionCode": 49
 }
