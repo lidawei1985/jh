@@ -2,10 +2,10 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 66,
-  "versionName": "1.0.66-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v66.apk",
-  "sha256": "798688CEFC48BB91DB44718E0001EA286692C38232E78937AB97249E85DD8202",
-  "changelog": "完成启动缓存加速、奈飞剧场和真实海报稳定显示；整理我的单列菜单；新增设备绑定会员授权、成人入口权限、消息铃铛和通知中心；修复播放器控制与逐级返回；收紧手机版首页顶部留白并上移快捷按钮；继续播放悬浮卡片增加关闭按钮；今日精选冷启动即显示；修复各栏目更多页筛选无数据。",
+  "versionCode": 77,
+  "versionName": "1.0.77-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v77.apk",
+  "sha256": "EFD7E7CECB3E69B492D91B4FBDDEC4062574140BB3D434D4AB6DAF341302590D",
+  "changelog": "新增全球电视：接入 iptv-org 官方公开 JSON，按常用、华语、亚洲、欧美、其他地区和类型分类；同频道多线路自动合并去重；本地缓存优先、每日后台同步、异常数据拒绝替换并保留上一版回滚；完善自有合法片源导入、验证、历史与失败恢复；修复手机导入窗口显示和返回。",
   "minimumSupportedVersionCode": 49
 }
