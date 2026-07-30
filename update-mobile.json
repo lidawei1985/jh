@@ -9,7 +9,7 @@
     "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80.apk",
     "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v80.apk"
   ],
-  "sha256": "0D22AA7C329A5C2D21444CB3DC399D5A6EF6296FC7C9C2EF293C5C9A006458B9",
+  "sha256": "C74C83FB9C3A2816F338F424609F5C97126E50F12B02CDA9F1306172CD89C663",
   "changelog": "修复更新下载在慢速网络下卡在0%/8%并超时的问题；每条线路自动重试3次，切换镜像时保留断点，只有长时间无任何数据进展才会切换线路；同时修复桌面授权管理器双击闪退和授权发布判断错误。",
   "minimumSupportedVersionCode": 49
 }
