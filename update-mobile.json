@@ -2,14 +2,14 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 78,
-  "versionName": "1.0.78-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v78.apk",
+  "versionCode": 79,
+  "versionName": "1.0.79-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v79.apk",
   "apkUrls": [
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v78.apk",
-    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v78.apk"
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v79.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v79.apk"
   ],
-  "sha256": "29193EE0FECBC6CFD3724571B1FB4EB2763FD1C73941B4E84BA461774D158500",
+  "sha256": "38509BA071C0D6FA219D11D7F790D0461696913B108D1470B275A7BA58FC1FBC",
   "changelog": "重做手机版搜索：使用系统键盘，新增搜索前、联想和海报结果三态，扩大跨源结果并支持筛选与返回恢复；更新下载增加双线路、断点续传、实时速度、停滞自动重连和取消操作；修复搜索页启动崩溃。",
   "minimumSupportedVersionCode": 49
 }
