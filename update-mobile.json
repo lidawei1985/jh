@@ -3,8 +3,9 @@
   "versionName": "1.0.88-mobile",
   "packageName": "com.ldw.cinema.mobile",
   "apkUrls": [
+    "https://cdn.jsdelivr.net/gh/lidawei1985/LDW-Cinema@main/releases/mobile/LDW-Cinema-Mobile-v88.apk",
     "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v88.apk"
   ],
   "sha256": "DE24F959F751B667D333649A86497B103285A12D421C00E01C9879491483D0BD",
-  "changelog": "更新下载体验优化：显示速度、大小、线路和断点续传状态；增加明确取消按钮并立即停止网络请求；修复接近完成时进度看似卡住。"
+  "changelog": "更新下载体验优化：优先高速 CDN、自动切换备用线路；显示速度、大小、线路和断点续传状态；增加明确取消按钮并立即停止网络请求。"
 }
