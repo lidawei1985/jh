@@ -2,14 +2,14 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 79,
-  "versionName": "1.0.79-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v79.apk",
+  "versionCode": 80,
+  "versionName": "1.0.80-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80.apk",
   "apkUrls": [
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v79.apk",
-    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v79.apk"
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v80.apk"
   ],
-  "sha256": "38509BA071C0D6FA219D11D7F790D0461696913B108D1470B275A7BA58FC1FBC",
-  "changelog": "重做手机版搜索：使用系统键盘，新增搜索前、联想和海报结果三态，扩大跨源结果并支持筛选与返回恢复；更新下载增加双线路、断点续传、实时速度、停滞自动重连和取消操作；修复搜索页启动崩溃。",
+  "sha256": "0D22AA7C329A5C2D21444CB3DC399D5A6EF6296FC7C9C2EF293C5C9A006458B9",
+  "changelog": "修复更新下载在慢速网络下卡在0%/8%并超时的问题；每条线路自动重试3次，切换镜像时保留断点，只有长时间无任何数据进展才会切换线路；同时修复桌面授权管理器双击闪退和授权发布判断错误。",
   "minimumSupportedVersionCode": 49
 }
