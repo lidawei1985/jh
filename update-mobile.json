@@ -2,15 +2,15 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 83,
-  "versionName": "1.0.83-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v83.apk",
+  "versionCode": 84,
+  "versionName": "1.0.84-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v84.apk",
   "apkUrls": [
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v83.apk",
-    "https://codeberg.org/sbqqqiiiu2/LDW-Cinema-Mobile/raw/branch/main/releases/mobile/LDW-Cinema-Mobile-v83.apk",
-    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v83.apk"
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v84.apk",
+    "https://codeberg.org/sbqqqiiiu2/LDW-Cinema-Mobile/raw/branch/main/releases/mobile/LDW-Cinema-Mobile-v84.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v84.apk"
   ],
-  "sha256": "D61117B953B0513AB25DB3FA2896FCA9AC53500AA0703A0A70394DDF85F38C73",
-  "changelog": "新增基础页完整分类菜单与独立内容首页；增强汉字、拼音、首字母、演员导演搜索联想；补充详情分享、播放器倍速字幕投屏小窗锁定和定时入口；修复内容首页空白主视觉并统一更新失败关闭。",
+  "sha256": "4006B4675CB8EB74DB35FA5730D45716997FCFBD14A2A7BB154FA59AF5DA2D92",
+  "changelog": "基础页采用奈飞式沉浸按钮：当前分类红色突出，其余分类低干扰显示；历史、直播、推送、收藏统一为深色图标工具按钮，并保持正常与成人模式功能一致。",
   "minimumSupportedVersionCode": 49
 }
