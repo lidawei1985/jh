@@ -4,10 +4,10 @@
   "packageName": "com.ldw.cinema.mobile",
   "versionCode": 80,
   "versionName": "1.0.80-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80.apk",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80-r2.apk",
   "apkUrls": [
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80.apk",
-    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v80.apk"
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80-r2.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v80-r2.apk"
   ],
   "sha256": "C74C83FB9C3A2816F338F424609F5C97126E50F12B02CDA9F1306172CD89C663",
   "changelog": "修复更新下载在慢速网络下卡在0%/8%并超时的问题；每条线路自动重试3次，切换镜像时保留断点，只有长时间无任何数据进展才会切换线路；同时修复桌面授权管理器双击闪退和授权发布判断错误。",
