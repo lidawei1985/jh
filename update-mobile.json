@@ -2,14 +2,15 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 80,
-  "versionName": "1.0.80-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80-r2.apk",
+  "versionCode": 81,
+  "versionName": "1.0.81-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v81.apk",
   "apkUrls": [
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v80-r2.apk",
-    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v80-r2.apk"
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v81.apk",
+    "https://codeberg.org/sbqqqiiiu2/LDW-Cinema-Mobile/raw/branch/main/releases/mobile/LDW-Cinema-Mobile-v81.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v81.apk"
   ],
-  "sha256": "C74C83FB9C3A2816F338F424609F5C97126E50F12B02CDA9F1306172CD89C663",
-  "changelog": "修复更新下载在慢速网络下卡在0%/8%并超时的问题；每条线路自动重试3次，切换镜像时保留断点，只有长时间无任何数据进展才会切换线路；同时修复桌面授权管理器双击闪退和授权发布判断错误。",
+  "sha256": "41DDE7D2DE04ADBD0A8722BB372E5B83517F0570B7B51A98B927EB245EDB5BA5",
+  "changelog": "更新清单请求加入防缓存时间戳，避免设备长时间读到旧版更新；新增 Codeberg 独立手机版备用下载仓库；保留每线路三次重试、断点续传、真实停滞检测和安装包完整性校验。",
   "minimumSupportedVersionCode": 49
 }
