@@ -1,15 +1,10 @@
 {
-  "channel": "stable",
-  "platform": "android-mobile",
+  "versionCode": 88,
+  "versionName": "1.0.88-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 87,
-  "versionName": "1.0.87-mobile",
-  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v87.apk",
   "apkUrls": [
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v87.apk",
-    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v87.apk"
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v88.apk"
   ],
-  "sha256": "2839FA01C8355E541ECC7B36516F4DD9D2ED03338EB381A204F5BC8829967FA8",
-  "changelog": "修复搜索页面内容层遮挡；单字母、拼音首字母和演员联想支持本地即时结果及在线补全；修复播放器慢源主线程卡死、详情失效来源闪退，并补全内容首页标签与筛选交互。",
-  "minimumSupportedVersionCode": 49
+  "sha256": "DE24F959F751B667D333649A86497B103285A12D421C00E01C9879491483D0BD",
+  "changelog": "更新下载体验优化：显示速度、大小、线路和断点续传状态；增加明确取消按钮并立即停止网络请求；修复接近完成时进度看似卡住。"
 }
