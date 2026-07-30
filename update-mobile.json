@@ -1,11 +1,11 @@
 {
-  "versionCode": 88,
-  "versionName": "1.0.88-mobile",
+  "versionCode": 89,
+  "versionName": "1.0.89-mobile",
   "packageName": "com.ldw.cinema.mobile",
   "apkUrls": [
-    "https://cdn.jsdelivr.net/gh/lidawei1985/LDW-Cinema@main/releases/mobile/LDW-Cinema-Mobile-v88.apk",
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v88.apk"
+    "https://cdn.jsdelivr.net/gh/lidawei1985/LDW-Cinema@main/releases/mobile/LDW-Cinema-Mobile-v89.apk",
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v89.apk"
   ],
-  "sha256": "DE24F959F751B667D333649A86497B103285A12D421C00E01C9879491483D0BD",
-  "changelog": "更新下载体验优化：优先高速 CDN、自动切换备用线路；显示速度、大小、线路和断点续传状态；增加明确取消按钮并立即停止网络请求。"
+  "sha256": "1BB194ACA7F88962275AF7259AF010186C430CEBB2CCD8184AA76E3BA75117DB",
+  "changelog": "更新链路增强：清单和 APK 都支持高速 CDN 与 GitHub 双线路；显示下载速度、大小、线路和续传状态；取消下载立即生效。"
 }
