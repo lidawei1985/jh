@@ -1,0 +1,17 @@
+{
+  "channel": "stable",
+  "platform": "android-mobile",
+  "packageName": "com.ldw.cinema.mobile",
+  "versionCode": 96,
+  "versionName": "1.0.96-mobile",
+  "apkUrl": "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v96.apk",
+  "apkUrls": [
+    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v96.apk",
+    "https://codeberg.org/sbqqqiiiu2/LDW-Cinema-Mobile/raw/branch/main/releases/mobile/LDW-Cinema-Mobile-v96.apk",
+    "https://github.com/lidawei1985/LDW-Cinema/raw/main/releases/mobile/LDW-Cinema-Mobile-v96.apk"
+  ],
+  "size": 5458585,
+  "sha256": "EAF4EB2E70D3896AD40BF0786BCB5D23B64D1B5C6FD949DF7A7DB01E7FC17E36",
+  "changelog": "手机版详情页按移动端顺序重排，线路与清晰度分离；新增本地追剧和相似推荐；播放器单击播放暂停、双击左右快退快进10秒；更新包校验完成后询问是否安装。",
+  "minimumSupportedVersionCode": 49
+}
