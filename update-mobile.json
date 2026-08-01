@@ -1,11 +1,15 @@
 {
-  "versionCode": 89,
-  "versionName": "1.0.89-mobile",
+  "channel": "stable",
+  "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
+  "versionCode": 100,
+  "versionName": "1.0.100-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.100-mobile/LDW-Cinema-Mobile-v100.apk",
   "apkUrls": [
-    "https://cdn.jsdelivr.net/gh/lidawei1985/LDW-Cinema@main/releases/mobile/LDW-Cinema-Mobile-v89.apk",
-    "https://raw.githubusercontent.com/lidawei1985/LDW-Cinema/main/releases/mobile/LDW-Cinema-Mobile-v89.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.100-mobile/LDW-Cinema-Mobile-v100.apk"
   ],
-  "sha256": "1BB194ACA7F88962275AF7259AF010186C430CEBB2CCD8184AA76E3BA75117DB",
-  "changelog": "更新链路增强：清单和 APK 都支持高速 CDN 与 GitHub 双线路；显示下载速度、大小、线路和续传状态；取消下载立即生效。"
+  "sha256": "EDE70ED2F14FA5D8A3DB329DB2347B23AF1B42E4EEC05AD43BFACA726DB2DB4E",
+  "changelog": "按搜索可视稿补齐人物/影片联想、真实筛选、模式隔离和返回位置；修复搜索与播放器启动崩溃；补齐顶部完整分类菜单、四快捷真实内容、精选演员阵容和空结果自动换源。；精简手机版设置常用项并隐藏低频技术项，验证真实详情播放与播放器控制。",
+  "minimumSupportedVersionCode": 84,
+  "remotePublished": true
 }
