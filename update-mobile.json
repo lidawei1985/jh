@@ -1,17 +1,14 @@
 {
-  "versionCode": 103,
-  "versionName": "1.0.103-mobile",
-  "package": "com.ldw.cinema.mobile",
-  "platform": "mobile",
-  "minimumSupportedVersionCode": 84,
-  "url": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.103-mobile/LDW-Cinema-Mobile-v103.apk",
-  "sha256": "C25733ADA349A8FEFE163C485A16F42D947A1FB743924DE356D7561B3EEA31E8",
+  "channel": "stable",
+  "platform": "android-mobile",
+  "packageName": "com.ldw.cinema.mobile",
+  "versionCode": 224,
+  "versionName": "1.0.224-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.224-mobile/LDW-Cinema-Mobile-v224.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.103-mobile/LDW-Cinema-Mobile-v103.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.224-mobile/LDW-Cinema-Mobile-v224.apk"
   ],
-  "changelog": [
-    "修复首页四个快捷入口内容页与焦点导航",
-    "修复选集文字截断、返回位置和播放器回退",
-    "稳定性与海报回退优化"
-  ]
+  "sha256": "CDF446E53C21CB64E236EE8AEA753AA629D8E45CE5C5F17AA6CED4BCE29028A8",
+  "minimumSupportedVersionCode": 84,
+  "changelog": "修复正常与成人模式最后一排动漫货架的更多入口；今日/成人精选改为从全部对应内置源验证真实可播放内容，正常模式严格筛选2026电影，支持左右选择和无限循环，并显示电影名、主演、豆瓣评分与年代。"
 }
