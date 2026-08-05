@@ -2,14 +2,14 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 224,
-  "versionName": "1.0.224-mobile",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.224-mobile/LDW-Cinema-Mobile-v224.apk",
+  "versionCode": 225,
+  "versionName": "1.0.225-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.225-mobile/LDW-Cinema-Mobile-v225.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.224-mobile/LDW-Cinema-Mobile-v224.apk",
-    "https://ghfast.top/https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.224-mobile/LDW-Cinema-Mobile-v224.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.225-mobile/LDW-Cinema-Mobile-v225.apk",
+    "https://ghfast.top/https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.225-mobile/LDW-Cinema-Mobile-v225.apk"
   ],
-  "sha256": "CDF446E53C21CB64E236EE8AEA753AA629D8E45CE5C5F17AA6CED4BCE29028A8",
+  "sha256": "BE31A29BDFC2D67E878CFDCF69927C3A7F1A59AE43B851D1FCA1743969F7F105",
   "minimumSupportedVersionCode": 84,
   "changelog": "修复正常与成人模式最后一排动漫货架的更多入口；今日/成人精选改为从全部对应内置源验证真实可播放内容，正常模式严格筛选2026电影，支持左右选择和无限循环，并显示电影名、主演、豆瓣评分与年代。"
 }
