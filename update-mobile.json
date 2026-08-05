@@ -2,13 +2,13 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 232,
-  "versionName": "1.0.232-mobile",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.232-mobile/LDW-Cinema-Mobile-v232.apk",
+  "versionCode": 233,
+  "versionName": "1.0.233-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.233-mobile/LDW-Cinema-Mobile-v233.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.232-mobile/LDW-Cinema-Mobile-v232.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.233-mobile/LDW-Cinema-Mobile-v233.apk"
   ],
-  "sha256": "04FEE0A831085C40F1A8A936FB026ED9369031476666A5528181E17A0AB4D17B",
+  "sha256": "E6831B8115E02389E3F9A69A661E68A9F56EC45B4876C4358C662BBEF93975EA",
   "minimumSupportedVersionCode": 84,
-  "changelog": "修复邵氏电影更多内容串类：固定索尼邵氏分类70，并增加邵氏类型元数据二次校验，错误标记或跨分类内容不再混入；保留原货架位置返回。"
+  "changelog": "所有海报货架统一使用右下角“进入”按钮；电视剧精选固定真实索尼分类13并恢复海报；新增多仓库直播聚合，每频道最多15条去重线路，失败静默自动换源并优先上次稳定线路；短剧竖屏播放支持上下滑动切换真实剧集、完整集数显示与相邻集准备；新增公开点播配置候选但仍须用户验证后启用。"
 }
