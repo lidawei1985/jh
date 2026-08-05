@@ -2,13 +2,13 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 228,
-  "versionName": "1.0.228-mobile",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.228-mobile/LDW-Cinema-Mobile-v228.apk",
+  "versionCode": 231,
+  "versionName": "1.0.231-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.231-mobile/LDW-Cinema-Mobile-v231.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.228-mobile/LDW-Cinema-Mobile-v228.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.231-mobile/LDW-Cinema-Mobile-v231.apk"
   ],
-  "sha256": "12FF764AEC6037F57CB1D2792DF1BC72B4216AC6C9D5E2700E764D939848153B",
+  "sha256": "525ED23E07138A77B57946633CC5B4159AC8314D9A5BD99837325483FFAC4BDE",
   "minimumSupportedVersionCode": 84,
-  "changelog": "今日精选严格使用2026真实可播放影片并支持左右循环；搜索支持字母/拼音、片名及人物联想；分类筛选保留真实类型元数据；短剧分类独立可点；直播优先缓存立即启动并后台刷新，失败可返回、重试、换源；海报失败保持中性占位，避免空白货架。"
+  "changelog": "修复今日精选停留占位图、自动轮播与左右箭头无响应；精选优先读取真实分类页并严格筛选2026电影电视剧；修复海报验证异步生命周期与旧年份误判缓存；搜索联想复用已验证海报；修复冷启动布局竞态。"
 }
