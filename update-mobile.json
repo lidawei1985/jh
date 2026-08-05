@@ -2,13 +2,13 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 231,
-  "versionName": "1.0.231-mobile",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.231-mobile/LDW-Cinema-Mobile-v231.apk",
+  "versionCode": 232,
+  "versionName": "1.0.232-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.232-mobile/LDW-Cinema-Mobile-v232.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.231-mobile/LDW-Cinema-Mobile-v231.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.232-mobile/LDW-Cinema-Mobile-v232.apk"
   ],
-  "sha256": "525ED23E07138A77B57946633CC5B4159AC8314D9A5BD99837325483FFAC4BDE",
+  "sha256": "04FEE0A831085C40F1A8A936FB026ED9369031476666A5528181E17A0AB4D17B",
   "minimumSupportedVersionCode": 84,
-  "changelog": "修复今日精选停留占位图、自动轮播与左右箭头无响应；精选优先读取真实分类页并严格筛选2026电影电视剧；修复海报验证异步生命周期与旧年份误判缓存；搜索联想复用已验证海报；修复冷启动布局竞态。"
+  "changelog": "修复邵氏电影更多内容串类：固定索尼邵氏分类70，并增加邵氏类型元数据二次校验，错误标记或跨分类内容不再混入；保留原货架位置返回。"
 }
