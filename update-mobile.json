@@ -2,13 +2,14 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 233,
-  "versionName": "1.0.233-mobile",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.233-mobile/LDW-Cinema-Mobile-v233.apk",
+  "versionCode": 242,
+  "versionName": "1.0.242-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.242-mobile/LDW-Cinema-Mobile-v242.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.233-mobile/LDW-Cinema-Mobile-v233.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.242-mobile/LDW-Cinema-Mobile-v242.apk"
   ],
-  "sha256": "E6831B8115E02389E3F9A69A661E68A9F56EC45B4876C4358C662BBEF93975EA",
+  "sha256": "8ECA3539B2828DA089C1810426E486CB4D5C3C2F7F62C9DB7FFDA14B397C97A0",
   "minimumSupportedVersionCode": 84,
-  "changelog": "所有海报货架统一使用右下角“进入”按钮；电视剧精选固定真实索尼分类13并恢复海报；新增多仓库直播聚合，每频道最多15条去重线路，失败静默自动换源并优先上次稳定线路；短剧竖屏播放支持上下滑动切换真实剧集、完整集数显示与相邻集准备；新增公开点播配置候选但仍须用户验证后启用。"
+  "changelog": "直播播放器按成熟手机直播 APP 重构：顶部安全区返回、控制层自动隐藏、频道/上一台/下一台、换源、比例、全屏、暂停、锁屏与统一返回状态机；同时修复正常/成人首页路由隔离、成人分类源健康过滤和短剧源聚合。"
 }
+
