@@ -2,13 +2,13 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 247,
-  "versionName": "1.0.247-mobile",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.247-mobile/LDW-Cinema-Mobile-v247.apk",
+  "versionCode": 248,
+  "versionName": "1.0.248-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.248-mobile/LDW-Cinema-Mobile-v248.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.247-mobile/LDW-Cinema-Mobile-v247.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.248-mobile/LDW-Cinema-Mobile-v248.apk"
   ],
-  "sha256": "A8587CDC1DE9741B30C7D27E4DAD743612F0C1F336DFDFE8BF554487728C4EAB",
+  "sha256": "9D3591BA95228120CE343447F498974E4BCF18116322257B936CFC80C93CC449",
   "minimumSupportedVersionCode": 84,
-  "changelog": "保留三级片现有内容与数据源，仅按源真实分类显示“伦理三级”（ID 12）；修复详情页网络失败时错误退出进程；保留正常/成人源隔离，未添加虚假分类按钮。"
+  "changelog": "成人模式三级片页保留原名称和原海报；新增电视端真实港台三级电影分类（ID 56），使用独立源并与正常模式、成人首页源池隔离。未改正常模式。"
 }
