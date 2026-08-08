@@ -2,14 +2,13 @@
   "channel": "stable",
   "platform": "android-mobile",
   "packageName": "com.ldw.cinema.mobile",
-  "versionCode": 242,
-  "versionName": "1.0.242-mobile",
-  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.242-mobile/LDW-Cinema-Mobile-v242.apk",
+  "versionCode": 247,
+  "versionName": "1.0.247-mobile",
+  "apkUrl": "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.247-mobile/LDW-Cinema-Mobile-v247.apk",
   "apkUrls": [
-    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.242-mobile/LDW-Cinema-Mobile-v242.apk"
+    "https://github.com/lidawei1985/LDW-Cinema/releases/download/v1.0.247-mobile/LDW-Cinema-Mobile-v247.apk"
   ],
-  "sha256": "8ECA3539B2828DA089C1810426E486CB4D5C3C2F7F62C9DB7FFDA14B397C97A0",
+  "sha256": "A8587CDC1DE9741B30C7D27E4DAD743612F0C1F336DFDFE8BF554487728C4EAB",
   "minimumSupportedVersionCode": 84,
-  "changelog": "直播播放器按成熟手机直播 APP 重构：顶部安全区返回、控制层自动隐藏、频道/上一台/下一台、换源、比例、全屏、暂停、锁屏与统一返回状态机；同时修复正常/成人首页路由隔离、成人分类源健康过滤和短剧源聚合。"
+  "changelog": "保留三级片现有内容与数据源，仅按源真实分类显示“伦理三级”（ID 12）；修复详情页网络失败时错误退出进程；保留正常/成人源隔离，未添加虚假分类按钮。"
 }
-
